@@ -1,10 +1,11 @@
-
-## Speak Application
+# Speak Application
 
 ## Project setup
+```
+npm install
+```
 
-### `npm install`
-
-## Server Run
-
-### `npm run serve`
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
