@@ -26,7 +26,7 @@ export default class Speech extends Component {
         })
     }
 
-    sing = (text) => {
+    getSpeak = (text) => {
 
         const speech = new SpeechSynthesisUtterance(text)
         speech.voice = this.state.voices.find(voice => voice.lang === this.state.lang)
@@ -40,7 +40,7 @@ export default class Speech extends Component {
     handleKeySpeech = (event) => {
         if (event.key === 'Enter') {
             const spech = event.target.value
-            this.sing(spech);
+            this.getSpeak(spech);
         }
     }
 
